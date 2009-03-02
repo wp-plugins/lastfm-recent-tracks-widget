@@ -1,6 +1,6 @@
 === Recently on Last.fm ===
 Contributors: gregory80
-Tags: widget, music
+Tags: widget, music, last.fm
 Requires at least: 2.6
 Tested up to: 2.7.1
 Stable tag: 0.4
@@ -13,7 +13,7 @@ The Last.fm Recent Tracks Plugin / Widget let's you display your Last.fm recent 
 
 == Installation ==
 
-1. Unzip lastfm_recent_tracks.zip and upload the entire folder to wp-content/plugins.
+1. Unzip lastfm-recent-tracks-widget.zip and upload the entire folder to wp-content/plugins.
 1. Activate the plugin through the 'Plugins' menu in WordPress
 
 = Widget Enabled Themes = 
