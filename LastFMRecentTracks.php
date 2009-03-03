@@ -6,9 +6,9 @@ Plugin URI: http://gregorytomlinson.com/encoded/recent-tracks-lastfm-widget/
 Description: Let's you display the Last FM Recent Tracks in the sidebar of your blog, useful if you use WP-Cache / Super Cache and want the feed to be fresh
 Author: Gregory Tomlinson
 Author URI: http://www.gregorytomlinson.com/encoded/
-Version: 0.7.1
+Version: 0.7.2
 
-Copyright Gregory Tomlinson (email : gregory.tomlinson@gmail.com | http://gregorytomlinson.com/encoded/)
+Copyright Gregory Tomlinson (email : gregory.tomlinson [at] gmail [dot] com | http://gregorytomlinson.com/encoded/)
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -43,7 +43,7 @@ class LastFMRecentTracksWidget {
 		$this->pluginURL = WP_CONTENT_URL . "/plugins/" . plugin_basename(dirname(__FILE__));	
 	
 		add_action("wp_head", array(&$this,"serveHeader"));
-		$widget_ops = array('description' => __('Arbitrary text or HTML'));		
+//		$widget_ops = array('description' => __('Arbitrary text or HTML'));		
 		register_sidebar_widget($this->name, array( &$this, 'widget_lastfmrecentracks' ));
 		register_widget_control($this->name, array( &$this, 'widget_lastfmrecentracks_controls'));			
 		// make sure it has jquery -- 2.7

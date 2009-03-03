@@ -3,9 +3,9 @@ Contributors: gregory80
 Tags: widget, music, last.fm
 Requires at least: 2.6
 Tested up to: 2.7.1
-Stable tag: 0.7.1
+Stable tag: 0.7.2
 
-Fast, flash free, non-cached view of Recent Tracks on Last.fm
+Fast, flash free, non-cached view of your Recent Tracks on Last.fm
 
 == Description ==
 The Last.fm Recent Tracks Plugin / Widget let's you display your Last.fm recent tracks in the sidebar of your blog, useful if you use WP-Cache / Super Cache and want the feed to be fresh. It leverages jQuery and JSONP to provide a never-stale, asynchronous connection to Last.fm.
