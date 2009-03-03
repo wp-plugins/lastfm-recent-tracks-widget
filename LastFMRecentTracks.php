@@ -6,7 +6,7 @@ Plugin URI: http://gregorytomlinson.com/encoded/recent-tracks-lastfm-widget/
 Description: Let's you display the Last FM Recent Tracks in the sidebar of your blog, useful if you use WP-Cache / Super Cache and want the feed to be fresh
 Author: Gregory Tomlinson
 Author URI: http://www.gregorytomlinson.com/encoded/
-Version: 0.7
+Version: 0.7.1
 
 Copyright Gregory Tomlinson (email : gregory.tomlinson@gmail.com | http://gregorytomlinson.com/encoded/)
 
