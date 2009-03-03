@@ -3,7 +3,7 @@ Contributors: gregory80
 Tags: widget, music, last.fm
 Requires at least: 2.6
 Tested up to: 2.7.1
-Stable tag: 0.6
+Stable tag: 0.7
 
 Fast, flash free, non-cached view of Recent Tracks on Last.fm
 
