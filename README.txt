@@ -3,7 +3,7 @@ Contributors: gregory80
 Tags: widget, music, last.fm
 Requires at least: 2.6
 Tested up to: 2.7.1
-Stable tag: 0.7.2
+Stable tag: 0.7.3
 
 Fast, flash free, non-cached view of your Recent Tracks on Last.fm
 
@@ -25,10 +25,15 @@ The Last.fm Recent Tracks Plugin / Widget let's you display your Last.fm recent 
 
 
 = Non Widget Enabled Themes =
-* Add The following HTML to your sidebar, replacing _ _ YOUR_USER_ID _ _ with your actual Last.fm username
+* Add The following HTML to your sidebar, replacing &#95;&#95;YOUR_USER_ID&#95;&#95; with your actual Last.fm username
 * <pre>&lt;div class="last_fm_recent_tracks_bx">
-	&lt;h4>&lt;a href="http://www.last.fm/user/_ _ YOUR_USER_ID _ _" target="_blank">Recently on Last.fm&lt;/a>&lt;/h4>
-	 &lt;ul count="5" user="_ _ YOUR_USER_ID _ _" id="recent_on_last_fm_itm_list">&lt;/ul>
+        &lt;style type="text/css">
+        	&lt;!--
+				.sp&#95;list&#95;itm&#95;span { display:block; }
+			-->
+        &lt;/style>
+	&lt;h4>&lt;a href="http://www.last.fm/user/&#95;&#95;YOUR_USER_ID&#95;&#95;" target="_blank">Recently on Last.fm&lt;/a>&lt;/h4>
+	 &lt;ul count="5" user="&#95;&#95;YOUR_USER_ID&#95;&#95;" id="recent_on_last_fm_itm_list">&lt;/ul>
 &lt;/div&gt;</pre>
 
 
