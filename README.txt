@@ -1,9 +1,9 @@
 === Recently on Last.fm ===
 Contributors: gregory80
-Tags: widget, music, last.fm
+Tags: widget, music, last.fm, jsonp
 Requires at least: 2.6
 Tested up to: 2.7.1
-Stable tag: 0.7.3
+
 
 Fast, flash free, non-cached view of your Recent Tracks on Last.fm
 
