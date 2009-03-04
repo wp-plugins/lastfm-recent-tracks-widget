@@ -70,7 +70,9 @@ var LastFMPipe = {
 
 /* Init the Buttons for Action */
 jQuery(document).ready( function($) {
-	var t= jQuery('#recent_on_last_fm_itm_list')[0];
-	var options = { user : t.getAttribute('user'), count : t.getAttribute('count') };
-	LastFMPipe.init( t, options );
+	try{
+		var t= jQuery('#recent_on_last_fm_itm_list')[0];
+		var options = { user : t.getAttribute('user'), count : t.getAttribute('count') };
+		LastFMPipe.init( t, options );	
+	} catch(e) {}
 });
