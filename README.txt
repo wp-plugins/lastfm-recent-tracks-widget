@@ -26,14 +26,14 @@ The Last.fm Recent Tracks Plugin / Widget let's you display your Last.fm recent 
 
 = Non Widget Enabled Themes =
 * Add The following HTML to your sidebar, replacing &#95;&#95;YOUR_USER_ID&#95;&#95; with your actual Last.fm username
-* <pre>&lt;div class="last_fm_recent_tracks_bx">
+* <pre>&lt;div class="last&#95;fm&#95;recent&#95;tracks&#95;bx">
         &lt;style type="text/css">
         	&lt;!--
 				.sp&#95;list&#95;itm&#95;span { display:block; }
 			-->
         &lt;/style>
 	&lt;h4>&lt;a href="http://www.last.fm/user/&#95;&#95;YOUR_USER_ID&#95;&#95;" target="_blank">Recently on Last.fm&lt;/a>&lt;/h4>
-	 &lt;ul count="5" user="&#95;&#95;YOUR_USER_ID&#95;&#95;" id="recent_on_last_fm_itm_list">&lt;/ul>
+	 &lt;ul count="5" user="&#95;&#95;YOUR_USER_ID&#95;&#95;" id="recent&#95;on&#95;last&#95;fm&#95;itm&#95;list">&lt;/ul>
 &lt;/div&gt;</pre>
 
 
