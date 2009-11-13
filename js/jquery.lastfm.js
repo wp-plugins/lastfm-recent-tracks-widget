@@ -30,11 +30,11 @@
 		*/
 		function success(jo) {
 			// access to el & o here
-			if( o.params.count > 1 && jo.recenttracks.track.length ) {
+			if( o.params.limit > 1 && jo.recenttracks.track.length ) {
 				for( i=0;i<jo.recenttracks.track.length;i++ ) {
 					renderItems( jo.recenttracks.track[i] ).appendTo( el );
 				}
-			else {
+			} else {
 				// handle the non array returned
 				renderItems( jo.recenttracks.track ).appendTo( el );
 			}

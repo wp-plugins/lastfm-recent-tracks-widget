@@ -72,7 +72,10 @@ class LastFMRecentTracksWidget {
         $before_title 
         	<a href="$this->last_fm_base_url$user" target="_blank">$this->name</a>
         $after_title
-        <ul count="$count" user="$user" id='recent_on_last_fm_itm_list'></ul>
+        <ul id='recent_on_last_fm_itm_list'></ul>
+        <script type="text/javascript">
+        	jQuery('#recent_on_last_fm_itm_list').lastfm( { params : { limit : "$count", user : "$user"  } } );
+        </script>
         $after_widget
 EOD;
 
@@ -126,7 +129,7 @@ EOD;
 	  (function() {
 	    var d = document, s = d.createElement('script');
 	    s.type = 'text/javascript';
-	    s.src = "$this->pluginURL/js/LastFMPipe.js";
+	    s.src = "$this->pluginURL/js/jquery.lastfm.js";
 	    d.getElementsByTagName('head')[0].appendChild(s);
 	  })();
 	  //]]>
