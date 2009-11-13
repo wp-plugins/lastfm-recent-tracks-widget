@@ -2,7 +2,7 @@
 Contributors: gregory80
 Tags: widget, music, last.fm, jsonp
 Requires at least: 2.6
-Tested up to: 2.7.1
+Tested up to: 2.8
 
 
 Fast, flash free, non-cached view of your Recent Tracks on Last.fm
