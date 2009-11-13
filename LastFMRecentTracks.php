@@ -6,7 +6,7 @@ Plugin URI: http://gregorytomlinson.com/encoded/recent-tracks-lastfm-widget/
 Description: Let's you display the Last FM Recent Tracks in the sidebar of your blog, useful if you use WP-Cache / Super Cache and want the feed to be fresh
 Author: Gregory Tomlinson
 Author URI: http://www.gregorytomlinson.com/encoded/
-Version: 0.7.5
+Version: 0.8
 
 Copyright Gregory Tomlinson (email : gregory.tomlinson [at] gmail [dot] com | http://gregorytomlinson.com/encoded/)
 
@@ -85,7 +85,7 @@ EOD;
 	function widget_lastfmrecentracks_controls() {
 		//
 		
-		$count_nums = array('5', '10', '15', '20');
+		$count_nums = array('1', '5', '10', '15', '20');
 		
 		$db_data = get_option($this->safe_name);
 		$image_url = $this->pluginURL . '/images/lastfm.png';
@@ -124,16 +124,7 @@ EOD;
 	function serveHeader() {
 		$siteurl = get_option('siteurl');
 	  $async = <<<EOT
-	  <script type="text/javascript">
-	  //<![CDATA[
-	  (function() {
-	    var d = document, s = d.createElement('script');
-	    s.type = 'text/javascript';
-	    s.src = "$this->pluginURL/js/jquery.lastfm.js";
-	    d.getElementsByTagName('head')[0].appendChild(s);
-	  })();
-	  //]]>
-	  </script>
+	  <script type="text/javascript" src="$this->pluginURL/js/jquery.lastfm.js"></script>
 	  
 EOT;
 		echo $async;	
