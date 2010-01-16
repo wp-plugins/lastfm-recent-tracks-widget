@@ -40,9 +40,19 @@
 			}
 		}
 		
+		function handleDate( itm ) {
+		    var n=new Date(), t, ago = " ";
+		    if(itm.date && itm.date.uts) {
+		      t =   Math.round( (n.getTime() / 1000 - parseInt( itm.date.uts )) / 60 );
+		      ago += ( t <= 1 ) ? "Now" : ( t < 60 ) ? t + " mins ago" : ( t < 3600 ) ? Math.round( t/60) + " hours ago" : Math.ceil( t/3600) + " days ago";
+		    } else {
+		        ago += "Now";
+		    }
+		    return ago;
+		}
+		
 		function renderItems( itm ) {
-			var li = $("<li />"), n = new Date(), t = Math.round( (n.getTime() / 1000 - parseInt( itm.date.uts )) / 60 ),
-				ago = " ",
+			var li = $("<li />"), ago = handleDate(itm),
 				a = $("<a />")
 					.html( itm.name ).attr( "href", itm.url )
 					.attr("target", "_blank").appendTo( li );
