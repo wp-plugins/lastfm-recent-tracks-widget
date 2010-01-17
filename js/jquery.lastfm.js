@@ -57,7 +57,6 @@
 					.html( itm.name ).attr( "href", itm.url )
 					.attr("target", "_blank").appendTo( li );
 	
-				ago += ( t <= 1 ) ? "Now" : ( t < 60 ) ? t + " mins ago" : ( t < 3600 ) ? Math.round( t/60) + " hours ago" : Math.ceil( t/3600) + " days ago";
 			var span = $("<span />").html( "<i>" + itm.artist['#text'] + "</i>" + ago )
 									.addClass("sp_list_itm_span").appendTo( li );
 			
