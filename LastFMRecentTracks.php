@@ -47,7 +47,7 @@ class LastFMRecentTracksWidget {
 		register_sidebar_widget($this->name, array( &$this, 'widget_lastfmrecentracks' ));
 		register_widget_control($this->name, array( &$this, 'widget_lastfmrecentracks_controls'));			
 		// make sure it has jquery -- 2.7
-		wp_enqueue_script("jquery", false, false, "1.2.6");	
+		wp_enqueue_script("jquery", false, false, "1.3.2");	
 	}
 
 	function activate() {
