@@ -46,7 +46,7 @@
               t =   Math.round( (n.getTime()/1000 - parseInt( itm.date.uts ) )/60 );
               ago += handleSinceDateEndings( t, itm.date.uts );
             } else {
-                ago += "";
+                ago += "Now";
             }
             return ago;            
             
