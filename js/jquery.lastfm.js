@@ -62,7 +62,7 @@
             } else if( t>= 60 && t<= 120) {
                 ago += Math.floor( t / 60 ) + " hour ago"
             } else if( t<1440 ) {
-                console.log(t)
+                //console.log(t)
                 ago += Math.floor( t / 60 )  + " hours ago";
             } else if( t< 2880) {
                 ago +=  "1 day ago";
@@ -70,7 +70,7 @@
                 ago +=  "2 days ago";
             } else {
                 date = new Date( parseInt( original_timestamp )*1000 ) 
-                console.log(date)
+                //console.log(date)
                 ago += o.months[ date.getMonth() ] + " " + date.getDate();
             }
             return ago;
